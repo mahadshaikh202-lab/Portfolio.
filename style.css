@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0e0e0e;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.logo span {
+  color: #ff4d4d;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ddd;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff4d4d;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 120px 10% 80px;
+  min-height: 100vh;
+  background: radial-gradient(circle at right, rgba(255, 77, 77, 0.3), transparent 40%), #0e0e0e;
+}
+
+.hero-content h3 {
+  font-size: 1.8rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-top: 10px;
+}
+
+.hero-content h1 span {
+  color: #ff4d4d;
+}
+
+.hero-content h2 {
+  margin-top: 10px;
+  color: #aaa;
+  font-weight: 400;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background-color: #ff1a1a;
+}
+
+.btn.secondary {
+  border: 2px solid #ff4d4d;
+  color: #ff4d4d;
+}
+
+.btn.secondary:hover {
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+/* Hero Image */
+.hero-img img {
+  width: 340px;
+  border-radius: 50%;
+  border: 5px solid #ff4d4d;
+  box-shadow: 0 0 30px rgba(255, 77, 77, 0.4);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* About */
+.about {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.about h2 {
+  color: #ff4d4d;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  color: #ccc;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.skill {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 15px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+  background: #252525;
+}
+
+/* Projects */
+.projects {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.projects h2 {
+  color: #ff4d4d;
+  margin-bottom: 20px;
+}
+
+/* Contact */
+.contact {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #ff4d4d;
+  margin-bottom: 20px;
+}
+
+footer {
+  background: #111;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-img img {
+    margin-top: 40px;
+    width: 260px;
+  }
+  .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+}
